@@ -2,7 +2,50 @@
 
 First off, thank you for considering contributing! This project is a learning journey for all of us. This guide will walk you through the entire process of making a contribution, from setting up your environment to getting your code merged.
 
-We use a workflow called **GitHub Flow**. The core idea is simple: the `main` branch is always stable, and all new work is done in separate branches and then merged into `main` through a **Pull Request (PR)**.
+We use a workflow called **GitHub Flow**. The core idea is simple: the `main` branch is always stable, and all new work is done in separate branches and then merged into `main` through a **Pull Request (PR)**. For a deeper dive into why we use this model, please read our [Git Concepts Guide](./docs/GIT_CONCEPTS.md).
+
+---
+
+## 🛠️ Prerequisites: What You Need
+
+Before you begin, make sure you have the following tools installed on your system.
+
+- **Python (3.8+):** The core programming language for our backend and AI model.
+- **pip:** The package installer for Python, which you'll use to install project dependencies.
+- **Git:** The version control system we use to manage our codebase.
+
+---
+
+## ⚙️ Local Environment Setup
+
+To ensure a clean and isolated workspace, you should always work inside a **Python virtual environment**. This prevents conflicts between project dependencies and your global Python packages.
+
+1.  **Create a Virtual Environment**
+    *   From the root of the `clarity` project folder, run:
+        ```bash
+        python3 -m venv venv
+        ```
+    *   This creates a `venv` folder inside your project directory.
+
+2.  **Activate the Virtual Environment**
+    *   You must "activate" the environment every time you work on the project.
+    *   **On macOS and Linux:**
+        ```bash
+        source venv/bin/activate
+        ```
+    *   **On Windows:**
+        ```bash
+        .\venv\Scripts\activate
+        ```
+    *   When activated, your shell prompt will change to show `(venv)`.
+
+3.  **Install Dependencies**
+    *   With your virtual environment active, install all the required packages from the `requirements.txt` file:
+        ```bash
+        pip install -r backend/requirements.txt
+        ```
+
+Now you are ready to start the development workflow!
 
 ---
 
